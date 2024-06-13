@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/whitebg1"
+    tools:context=".Login">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:background="@drawable/whitebg1"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="277dp"
+            android:layout_gravity="center"
+            app:srcCompat="@drawable/kontaktbg" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="LOG IN"
+            android:textColor="@color/black"
+            android:textSize="50dp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/loginEmail"
+            android:layout_width="250dp"
+            android:layout_height=".3in"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/inputdesign"
+            android:drawableLeft="@drawable/iconperson"
+            android:hint="Username"
+            android:padding="10dp"
+            android:textColor="@color/black" />
+
+        <EditText
+            android:id="@+id/loginPassword"
+            android:layout_width="250dp"
+            android:layout_height=".3in"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/inputdesign"
+            android:drawableLeft="@drawable/iconpass"
+            android:hint="Password"
+            android:padding="10dp"
+            android:password="true"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/forgetpass"
+            android:layout_width="302dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:paddingRight="7dp"
+            android:text="Forget Password?"
+            android:textAlignment="textEnd"
+            android:textSize="15dp"
+            android:clickable="true"
+            android:textColor="#0000FF" />
+
+        <Button
+            android:id="@+id/btnLogin"
+            android:layout_width="200dp"
+            android:layout_height=".4in"
+            android:layout_gravity="center"
+            android:layout_marginTop="35dp"
+            android:backgroundTint="#A800DE"
+            android:onClick="login"
+            android:text="Log In"
+            android:textSize="20dp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:text="Don't have an Account?"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/btnsignup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:clickable="true"
+                android:paddingTop="12dp"
+                android:text=" Sign Up"
+                android:textColor="#0000FF"
+                android:textSize="15dp" />
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+</LinearLayout>
